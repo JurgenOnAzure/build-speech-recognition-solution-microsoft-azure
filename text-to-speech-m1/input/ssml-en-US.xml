@@ -1,0 +1,18 @@
+﻿<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis"
+       xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-US">
+  <voice name="en-US-JennyNeural">
+    <mstts:express-as style="assistant">
+      Would you like to learn more about the Speech service?
+    </mstts:express-as>
+  </voice>
+  <voice name="en-US-AriaNeural">
+    <mstts:express-as style="cheerful">
+      Yes <break time="75ms" /> that sounds like a lot of fun.
+    </mstts:express-as>
+  </voice>
+  <voice name="en-US-JennyNeural">
+    <mstts:express-as style="assistant">
+      Great, let's begin.
+    </mstts:express-as>
+  </voice>
+</speak>

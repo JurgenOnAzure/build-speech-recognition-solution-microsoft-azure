@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "3f0e4ccb-5209-464b-9054-9fee37d03686",
+		"name": "Azure Translator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get languages",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "{{subscription-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Region",
+						"value": "{{subscription-region}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"Text\": \"Hi, what is your name?\"}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.cognitive.microsofttranslator.com/languages?api-version={{api-version}}&scope=translation",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cognitive",
+						"microsofttranslator",
+						"com"
+					],
+					"path": [
+						"languages"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "{{api-version}}"
+						},
+						{
+							"key": "scope",
+							"value": "translation"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detect languages",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "{{subscription-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Region",
+						"value": "{{subscription-region}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"Text\": \"Translator is a cloud-based machine translation service and is part of the Azure Cognitive Services family.\"},\r\n    {\"Text\": \"Translator är en molnbaserad maskin översättningstjänst och är en del av Azure Cognitive Services-familjen.\"}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.cognitive.microsofttranslator.com/detect?api-version={{api-version}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cognitive",
+						"microsofttranslator",
+						"com"
+					],
+					"path": [
+						"detect"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "{{api-version}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Translate text",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "{{subscription-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Region",
+						"value": "{{subscription-region}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"Text\": \"Translator is a cloud-based machine translation service and is part of the Azure Cognitive Services family.\"},\r\n    {\"Text\": \"It is easy to integrate in your applications, websites, tools, and solutions.\"}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.cognitive.microsofttranslator.com/translate?api-version={{api-version}}&from=en&to=es,nl,ko,sv",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cognitive",
+						"microsofttranslator",
+						"com"
+					],
+					"path": [
+						"translate"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "{{api-version}}"
+						},
+						{
+							"key": "from",
+							"value": "en"
+						},
+						{
+							"key": "to",
+							"value": "es,nl,ko,sv"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Translate HTML",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "{{subscription-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Region",
+						"value": "{{subscription-region}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"Text\": \"<div class='notranslate'>Translator will not touch this.</div><div><p>This paragraph will be translated.</p></div>\"}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.cognitive.microsofttranslator.com/translate?api-version={{api-version}}&from=en&to=es,nl,ko,sv&textType=html",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cognitive",
+						"microsofttranslator",
+						"com"
+					],
+					"path": [
+						"translate"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "{{api-version}}"
+						},
+						{
+							"key": "from",
+							"value": "en"
+						},
+						{
+							"key": "to",
+							"value": "es,nl,ko,sv"
+						},
+						{
+							"key": "textType",
+							"value": "html"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dictionary lookup",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "{{subscription-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Region",
+						"value": "{{subscription-region}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"Text\": \"Buchen\"}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.cognitive.microsofttranslator.com/dictionary/lookup?api-version={{api-version}}&from=de&to=en",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cognitive",
+						"microsofttranslator",
+						"com"
+					],
+					"path": [
+						"dictionary",
+						"lookup"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "{{api-version}}"
+						},
+						{
+							"key": "from",
+							"value": "de"
+						},
+						{
+							"key": "to",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
