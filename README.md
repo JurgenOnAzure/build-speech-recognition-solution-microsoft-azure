@@ -8,22 +8,6 @@ Here you'll find the demo and study material for my Pluralsight course [Build a 
 
 I hope you enjoyed the course. If you have any questions, please don't hesitate don't contact me!
 
-## rest-samples
-
-This folder contains a Postman collection with sample calls to do various operations via the Translator REST API.
-
-## speech-to-text-m1
-
-This .NET project contains a sample C# console application that is showcased in the first module in the course and demonstrates speech-to-text operations.
-
-## text-to-speech-m1
-
-This .NET project contains a sample C# console application that is showcased in the first module in the course and demonstrates text-to-speech operations.
-
-## translation-m2
-
-This .NET project contains a sample C# console application that is showcased in the second module in the course and demonstrates speech translation operations.
-
 ## Use Speech and Translation services responsibily!
 
 #### Code of Conduct for Text-to-Speech integrations:
@@ -45,6 +29,22 @@ https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/concept
 #### Disclosure design guidelines:
 
 https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/concepts-disclosure-guidelines
+
+## rest-samples
+
+This folder contains a Postman collection with sample calls to do various operations via the Translator REST API.
+
+## speech-to-text-m1
+
+This .NET project contains a sample C# console application that is showcased in the first module in the course and demonstrates speech-to-text operations.
+
+## text-to-speech-m1
+
+This .NET project contains a sample C# console application that is showcased in the first module in the course and demonstrates text-to-speech operations.
+
+## translation-m2
+
+This .NET project contains a sample C# console application that is showcased in the second module in the course and demonstrates speech translation operations.
 
 ## References and documentation
 
