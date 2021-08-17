@@ -123,3 +123,15 @@ https://docs.microsoft.com/en-us/azure/cognitive-services/translator/reference/r
 #### What is the Speech CLI?:
 
 https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/spx-overview
+
+#### Speech Services pricing
+
+https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services
+
+#### Translator pricing
+
+https://azure.microsoft.com/en-us/pricing/details/cognitive-services/translator
+
+#### Azure Cognitive Services pricing
+
+https://azure.microsoft.com/en-us/pricing/details/cognitive-services
