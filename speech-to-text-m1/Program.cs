@@ -37,7 +37,7 @@ namespace speech_to_text_m1
   {
     // TODO: set your Speech Recognition settings here
     private const string speechSubscriptionKey = "TODO";
-    private const string speechRegion = "eastus";
+    private const string speechRegion = "TODO";
 
     private const ConsoleColor infoConsoleColor = ConsoleColor.Yellow;
     private const ConsoleColor successConsoleColor = ConsoleColor.Green;
