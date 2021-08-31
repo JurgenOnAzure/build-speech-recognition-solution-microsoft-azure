@@ -1,6 +1,6 @@
-# Build a Speech Recognition Solution with Microsoft Azure
+https://user-images.githubusercontent.com/62745957/131511883-e8523cb1-edbf-4607-b496-7d67eef063a9.mp4
 
-![enter image description here](https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-vrt-color-2.png)  
+# Build a Speech Recognition Solution with Microsoft Azure
 
 Hi!
 
